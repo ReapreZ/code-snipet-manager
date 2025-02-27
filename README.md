@@ -1,51 +1,51 @@
-# code-snipet-manager
+# **Code Snippet Manager (Spring Boot + Gradle)**
 
-# Code Snippet Manager (Spring Boot + Gradle)
-
-Ein einfaches Spring Boot-Projekt zum Speichern und Verwalten von Code-Snippets. Dieses Projekt dient dazu sich mit Spring-Boot und Gradle vertraut zu machen.
+A simple Spring Boot project for storing and managing code snippets. This project is intended to help familiarize myself with Spring Boot and Gradle.
 
 ---
 
-##  Projektübersicht
+# How to use the Snippet Manager:
+
+1. rename the development.secrets.properties file into secrets.properties and change it your settings
+2. Start the project by running the main-class
+
+---
+
+## **Project Overview**
 - **Backend:** Spring Boot (Gradle)
-- **Datenbank:** H2 (dev) / PostgreSQL (prod)
+- **Database:** H2 (dev) / PostgreSQL (prod)
 - **API:** REST & Swagger
 - **Security:** Optional (JWT, Basic Auth)
 - **Frontend:** Optional Thymeleaf / React / Vue
 
-
-##  To Do's:
-
-
-### *1 Sicherheit & Authentifizierung*
-- [ ] **Spring Security einbinden?**
-    - [ ] Brauchen wir eine Anmeldung? (JWT, OAuth?)
-    - [ ] Zugriffsbeschränkung für API-Routen
-    - [ ] Rollen und Rechte definieren
-
 ---
 
-### *2 Code-Qualität & Dokumentation*
-- [ ] **Logging & Fehlerhandling verbessern**
-  - [ ] `@Slf4j` für Logging hinzufügen
-  - [ ] Einheitliche Fehlerausgabe mit `@ControllerAdvice`
+## **To-Do List:**
 
-- [ ] **API-Dokumentation mit Swagger/OpenAPI**
-  - [ ] `/swagger-ui.html` hinzufügen
+### *1. Security & Authentication*
+- [ ] **Integrate Spring Security?**
+  - [ ] Do we need authentication? (JWT, OAuth?)
+  - [ ] Restrict access to API routes
+  - [ ] Define user roles and permissions
 
----
+---  
 
-### *3 Testing & Deployment**
-- [ ] **Tests schreiben**
-    - [ ] Unit-Tests (`SnippetService`, `SnippetRepository`)
-    - [ ] Integrationstests für API (`@SpringBootTest`)
+### *2. Code Quality & Documentation*
+- [ ] **Improve logging & error handling**
+  - [ ] Standardized error responses with `@ControllerAdvice`
 
-- [ ] **Deployment vorbereiten**
-    - [ ] Docker-Setup für PostgreSQL & Spring Boot
-    - [ ] CI/CD mit GitHub Actions oder GitLab CI
+---  
 
----
+### *3. Testing & Deployment*
+- [ ] **Write tests**
+  - [ ] Unit tests (`SnippetService`, `SnippetRepository`)
+  - [ ] API integration tests (`@SpringBootTest`)
 
+- [ ] **Prepare for deployment**
+  - [ ] Docker setup for PostgreSQL & Spring Boot
+  - [ ] CI/CD with GitHub Actions or GitLab CI
 
-## **Zusätzliche Notizen/Fragen**
-*Wie soll das Projekt später deployt werden?*
+---  
+
+## **Additional Notes/Questions**
+*How should the project be deployed in the future?*
