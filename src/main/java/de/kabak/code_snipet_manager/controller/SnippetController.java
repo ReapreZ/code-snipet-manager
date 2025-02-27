@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
 public class SnippetController {
 
     private final SnippetRepository repository;
@@ -19,7 +20,7 @@ public class SnippetController {
     List<Snippet> all() {
         return repository.findAll();
     }
-    @PostMapping("/employees")
+    @PostMapping("/snippets")
     Snippet newSnippet(@RequestBody Snippet newSnippet) {
         return repository.save(newSnippet);
     }
@@ -30,7 +31,7 @@ public class SnippetController {
                 .orElseThrow(() -> new SnippetNotFoundException(id));
     }
 
-    @PutMapping("/snippet/{id}")
+    @PutMapping("/snippets/{id}")
     Snippet replaceSnippet(@RequestBody Snippet newSnippet, @PathVariable Long id) {
 
         return repository.findById(id)
@@ -42,7 +43,7 @@ public class SnippetController {
                 .orElseGet(() -> repository.save(newSnippet));
     }
 
-    @DeleteMapping("snippet/{id}")
+    @DeleteMapping("snippets/{id}")
     void deleteSnippet(@PathVariable Long id) {
         repository.deleteById(id);
     }
