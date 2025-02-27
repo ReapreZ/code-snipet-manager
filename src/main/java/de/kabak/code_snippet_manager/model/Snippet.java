@@ -1,4 +1,4 @@
-package de.kabak.code_snipet_manager.model;
+package de.kabak.code_snippet_manager.model;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

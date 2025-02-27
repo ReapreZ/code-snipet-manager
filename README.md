@@ -1,6 +1,7 @@
 # **Code Snippet Manager (Spring Boot + Gradle)**
 
-A simple Spring Boot project for storing and managing code snippets. This project is intended to help familiarize myself with Spring Boot and Gradle.
+A simple Spring Boot project for storing and managing code snippets. This project is intended to help myself to learn different
+common technologies like gradle, springboot and react.
 
 ---
 

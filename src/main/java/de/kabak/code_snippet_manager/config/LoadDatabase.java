@@ -1,7 +1,7 @@
-package de.kabak.code_snipet_manager.config;
+package de.kabak.code_snippet_manager.config;
 
-import de.kabak.code_snipet_manager.model.Snippet;
-import de.kabak.code_snipet_manager.repository.SnippetRepository;
+import de.kabak.code_snippet_manager.model.Snippet;
+import de.kabak.code_snippet_manager.repository.SnippetRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

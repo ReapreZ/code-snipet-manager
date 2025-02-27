@@ -1,8 +1,8 @@
-package de.kabak.code_snipet_manager.controller;
+package de.kabak.code_snippet_manager.controller;
 
-import de.kabak.code_snipet_manager.exception.SnippetNotFoundException;
-import de.kabak.code_snipet_manager.model.Snippet;
-import de.kabak.code_snipet_manager.repository.SnippetRepository;
+import de.kabak.code_snippet_manager.exception.SnippetNotFoundException;
+import de.kabak.code_snippet_manager.model.Snippet;
+import de.kabak.code_snippet_manager.repository.SnippetRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

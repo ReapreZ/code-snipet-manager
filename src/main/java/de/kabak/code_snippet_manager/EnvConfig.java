@@ -1,4 +1,4 @@
-package de.kabak.code_snipet_manager;
+package de.kabak.code_snippet_manager;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.CommandLineRunner;

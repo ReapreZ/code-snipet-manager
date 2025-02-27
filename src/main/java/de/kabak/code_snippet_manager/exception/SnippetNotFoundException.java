@@ -1,4 +1,4 @@
-package de.kabak.code_snipet_manager.exception;
+package de.kabak.code_snippet_manager.exception;
 
 
 public class SnippetNotFoundException extends RuntimeException{
