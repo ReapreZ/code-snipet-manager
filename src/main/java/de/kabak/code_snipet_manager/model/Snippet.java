@@ -1,9 +1,8 @@
 package de.kabak.code_snipet_manager.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
+import jakarta.persistence.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.Formula;
 
 import java.time.LocalDateTime;
 
@@ -11,20 +10,38 @@ import java.time.LocalDateTime;
 public class Snippet {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
     private String title;
-    @Lob
+
     private String code;
     //TODO: Use enum instead of String
     private String language;
+
+    @CreationTimestamp
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;
 
-    public long getId() {
+    // Gets called before the Entity gets saved to the Database
+    @PrePersist
+    protected void onCreate() {
+        if (expiresAt == null) {
+            this.expiresAt = LocalDateTime.now().plusDays(30);
+        }
+    }
+
+    public Snippet(String title, String code, String language) {
+        this.title = title;
+        this.code = code;
+        this.language = language;
+    }
+
+    Snippet() {}
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

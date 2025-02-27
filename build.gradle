@@ -29,14 +29,14 @@ ext {
 }
 
 dependencies {
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// Datenbankanbindung
+	implementation 'jakarta.annotation:jakarta.annotation-api:2.1.1'
+	// database
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	// für lokale Datenbank Entwicklung
+	// local database
 	implementation 'com.h2database:h2'
-	// Reduziert Boilerplate-Code?
-	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
